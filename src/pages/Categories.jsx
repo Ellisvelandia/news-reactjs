@@ -2,7 +2,7 @@ import React from 'react'
 
 const Categories = ({cat}) => {
   return (
-    <div className=''>{cat}</div>
+    <div className='min-h-screen'>{cat}</div>
   )
 }
 
