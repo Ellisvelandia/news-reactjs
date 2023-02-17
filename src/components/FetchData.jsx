@@ -20,7 +20,6 @@ const FetchData = ({ cat }) => {
     fetchData();
   }, [cat]);
 
-  console.log(data);
   return (
     <div className="my-4">
       <h1 className="text-center text-xl">
