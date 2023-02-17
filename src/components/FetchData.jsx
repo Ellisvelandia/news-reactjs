@@ -12,8 +12,8 @@ const FetchData = ({ cat }) => {
       await axios
         .get(
           cat
-            ? `https://newsapi.org/v2/top-headlines?country=us&category=${cat}&apiKey=2c428aa742b240fda9949bbdbe0153ec`
-            : "https://newsapi.org/v2/top-headlines?country=us&apiKey=2c428aa742b240fda9949bbdbe0153ec"
+            ? `https://newsapi.org/v2/everything?q=${cat}&from=2023-02-16&to=2023-02-16&sortBy=popularity&apiKey=2c428aa742b240fda9949bbdbe0153ec`
+            : "https://newsapi.org/v2/everything?q=apple&from=2023-02-16&to=2023-02-16&sortBy=popularity&apiKey=2c428aa742b240fda9949bbdbe0153ec"
         )
         .then((res) => setData(res.data.articles))
         .catch((error) => {
